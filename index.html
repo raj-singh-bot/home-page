@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
 
-  <script src="index.js" defer></script>
-</head>
-
-<body>
-  <!-- <section class="headerSection">
+  <body>
+    <!-- <section class="headerSection">
     <div class="container">
       <div class="navbar" id="navbar">
         <div class="mainMenu">
@@ -49,334 +53,350 @@
       </div>
     </div>
   </section> -->
-  <header>
-    <div class="header">
-      <div class="headerLogo">
-        <img src="./public/Logo.png" alt="our logo" />
-      </div>
-      <div class="headerContact">
-        <div class="headerWhatsAppIcon">
-          <i class="fa fa-whatsapp"></i>
-          <span style="margin-left: 5px">610-601-6285 </span>
+    <header>
+      <div class="header">
+        <div class="headerLogo">
+          <img src="./public/Logo.png" alt="our logo" />
         </div>
-        <div class="headerLoactionIcon">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-          <span style="margin-left: 5px">gillconinc@verizon.net</span>
+        <div class="headerContact">
+          <div class="headerWhatsAppIcon">
+            <i class="fa fa-whatsapp"></i>
+            <span style="margin-left: 5px">610-601-6285 </span>
+          </div>
+          <div class="headerLoactionIcon">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span style="margin-left: 5px">gillconinc@verizon.net</span>
+          </div>
         </div>
-      </div>
-      <div class="headerSocialMediaIcon">
-        <i class="fa fa-facebook-square" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        <i class="fa fa-youtube" aria-hidden="true"></i>
-        <div class="toogleDiv">
-          <div class="toggle" onClick="scrollFunction()" style="display: none">
-            <i class="fa fa-bars" aria-hidden="true"></i>
+        <div class="headerSocialMediaIcon">
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+          <div class="toogleDiv">
+            <div
+              class="toggle"
+              onClick="scrollFunction()"
+              style="display: none"
+            >
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
           </div>
         </div>
       </div>
-      
-    </div>
-    <div id="myLinks" style="display: none">
-      <a class="myLinkFirst">HOME</a>
-      <a class="myLinkFirst">ABOUT</a>
-      <a class="myLinkFirst">CONTACT</a>
-      <a class="myLinkFirst">SPECIALTIES</a>
-      <a class="myLinkFirst">COMMERCIAL SERVICES</a>
-      <a class="myLinkFirst">PORTFOLIO OF PAST PROJECTS</a>
-      <a class="myLinkFirst">VIDEOS</a>
-      <a class="myLinkFirst">IMAGES</a>
-      <a class="myLinkFirst">BLOG</a>
-    </div>
-  </header>
-  <div class="sliderSection">
-    <div class="slideshow-container">
-      <div class="navigator">
-        <div class="navigatorAllBtn nav_links">
-          <ul>
-            <li class="homeNavItem"><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li><a href="#">SPECIALTIES</a></li>
-            <li><a href="#">COMMERCIAL SERVICES</a></li>
-            <li><a href="#">PORTFOLIO OF PAST PROJECTS</a></li>
-            <li><a href="#">VIDEOS</a></li>
-            <li><a href="#">IMAGES</a></li>
-            <li class="blogNavItem"><a href="#">BLOG</a></li>
-          </ul>
-        </div>
+      <div id="myLinks" style="display: none">
+        <a class="myLinkFirst">HOME</a>
+        <a class="myLinkFirst">ABOUT</a>
+        <a class="myLinkFirst">CONTACT</a>
+        <a class="myLinkFirst">SPECIALTIES</a>
+        <a class="myLinkFirst">COMMERCIAL SERVICES</a>
+        <a class="myLinkFirst">PORTFOLIO OF PAST PROJECTS</a>
+        <a class="myLinkFirst">VIDEOS</a>
+        <a class="myLinkFirst">IMAGES</a>
+        <a class="myLinkFirst">BLOG</a>
       </div>
-      <div class="mySlides fade">
-        <img src="./public/Roof Main1.jpg" style="width: 100%; height: 75vh" />
-      </div>
-
-      <div class="mySlides fade">
-        <img src="./public/Roof Main2.jpg" style="width: 100%; height: 75vh" />
-      </div>
-
-      <div class="mySlides fade">
-        <img src="./public/Roof Main3.jpg" style="width: 100%; height: 75vh" />
-      </div>
-      <div class="mySlides fade">
-        <img src="./public/Roof Main4.jpg" style="width: 100%; height: 75vh" />
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
-      <br />
-      <div class="sliderDot">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
-    </div>
-  </div>
-
-  <div class="overlaySection">
-    <div class="img-overlay">
-      <div class="imgBtn">
-        <img src="./public/img1.png" alt="Avatar" class="img-overlay-image" />
-        <div class="img-button">ASPHALT</div>
-      </div>
-      <div class="overlay">
-        <div class="text">
-          When it comes to shingles there are three types to choose from. 3
-          Tab Shingles, Dimensional shingles, and Luxury Shingles. Our team is
-          knowledgeable and experienced and can help you choose the right
-          shingle for your business, institution, or personal home.
-        </div>
-      </div>
-    </div>
-    <div class="img-overlay">
-      <div class="imgBtn">
-        <img src="./public/img2.png" alt="Avatar" class="img-overlay-image" />
-        <div class="img-button">SLATE</div>
-      </div>
-      <div class="overlay">
-        <div class="text">
-          We have years of experience in working with slate. We can source a
-          wide variety of natural slate options in a wide array of colors to
-          create the look you want. We are also highly skilled in slate
-          restoration work.
-        </div>
-      </div>
-    </div>
-    <div class="img-overlay">
-      <div class="imgBtn">
-        <img src="./public/img3.png" alt="Avatar" class="img-overlay-image" />
-        <div class="img-button">SPECIALITY TILE</div>
-      </div>
-      <div class="overlay">
-        <div class="text">
-          We want our customers to have exactly what they want. That’s why we
-          offer a wide selection of speciality roof tiles in various styles,
-          colors, and materials. We are only too happy to talk you through
-          some of the options allowing you to make an informed choice that is
-          right for you and your property.
-        </div>
-      </div>
-    </div>
-    <div class="img-overlay">
-      <div class="imgBtn">
-        <img src="./public/img4.png" alt="Avatar" class="img-overlay-image" />
-        <div class="img-button">CEDAR</div>
-      </div>
-      <div class="overlay">
-        <div class="text">
-          We have extensive experience in installing all types of cedar
-          roofing and generally have at least one crew installing cedar every
-          work day of the year. Gillespie Contracting Inc is certified through
-          The Cedar Shake & Shingle Bureau.
-        </div>
-      </div>
-    </div>
-    <div class="img-overlay">
-      <div class="imgBtn">
-        <img src="./public/img5.png" alt="Avatar" class="img-overlay-image" />
-        <div class="img-button">METAL</div>
-      </div>
-      <div class="overlay">
-        <div class="text">
-          At Gillespie Contracting Inc we offer a variety of custom metal
-          fabrication using a range of materials including copper, steel,
-          zinc, and aluminum. In addition to metal roofing, this includes
-          finials, window fabrication, roof crests, flashing and custom
-          gutters.
-        </div>
-      </div>
-    </div>
-    <div class="img-overlay">
-      <div class="imgBtn">
-        <img src="./public/img6.png" alt="Avatar" class="img-overlay-image" />
-        <div class="img-button">HISTORICAL RESTORATION</div>
-      </div>
-      <div class="overlay">
-        <div class="text">
-          At Gillespie Contracting Inc. we believe that restoration is an art
-          form. We have 30+ years of experience which has led us to the
-          forefront of the industry. We specialize in historic restoration
-          work of homes, churches, university buildings and other historic
-          structures.
-        </div>
-      </div>
-    </div>
-    <div class="img-overlay">
-      <div class="imgBtn">
-        <img src="./public/img7.png" alt="Avatar" class="img-overlay-image" />
-        <div class="img-button">SIDING</div>
-      </div>
-      <div class="overlay">
-        <div class="text">
-          We offer a range of siding installation, siding repair and siding
-          replacement services carried out by experienced siding contractors.
-        </div>
-      </div>
-    </div>
-    <div class="img-overlay">
-      <div class="imgBtn">
-        <img src="./public/img8.png" alt="Avatar" class="img-overlay-image" />
-        <div class="img-button">WINDOWS</div>
-      </div>
-      <div class="overlay">
-        <div class="text">
-          In addition to roofing services, we can also offer a range of window
-          installation services, including custom metal window fabrication.
-        </div>
-      </div>
-    </div>
-    <div class="img-overlay">
-      <div class="imgBtn">
-        <img src="./public/img9.png" alt="Avatar" class="img-overlay-image" />
-        <div class="img-button">GUTTERS</div>
-      </div>
-      <div class="overlay">
-        <div class="text">
-          We use World Gutter System for all our Euro style gutter systems. We
-          are also capable of fabricating custom gutters, k-style, and half
-          round style using copper for a durable and attractive finish to any
-          property.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="descriptionSection">
-    <div class="descContent">
-      <h3>STAYING ON TOP OF THINGS!</h3>
-      <p style="margin-bottom: 0">
-        At Gillespie Contracting Inc, we are known as skilled specialists
-        within our tracle. The art of roofing is our craft & passion. With
-        over 30 years of experience, we offer weekend availability and
-        flexible appointment options. We pride ourselves on being one of the
-        country’s most high-end roofing contractors. We have built our
-        reputation as one of the top 1% in America's roofing industry. We
-        specialize in producing beautiful slate, tile, and cedar roofing. We
-        are als >d in custom metal fabrication and historic restoration work.
-        Every job is treated as if we were working on our own property, from
-        the humblest abode to the grandest of estates. One of the most
-        rewarding aspects of ot work is completing a job or project and seeing
-        how pleased the owner is and knowing they can enjoy, rely on, and take
-        pride in the finished product for years to com.
-      </p>
-      <p style="font-weight: 600; margin-top: 0">
-        <span style="text-decoration: underline"> Call 610-601-6285 </span>
-        to dicuss your project with us today!
-      </p>
-    </div>
-  </div>
-  <footer>
-    <div class="footerSection">
-      <div class="img">
-        <img src="./public/Layer 29.png" alt="" />
-      </div>
-      <div class="contactUsSection">
-        <div class="contactsHeader">
-          <h3>CONTACT US</h3>
-        </div>
-        <div class="allField">
-          <div class="field">
-            <p>Name</p>
-            <input />
-          </div>
-          <div class="field">
-            <p>Email</p>
-            <input />
-          </div>
-          <div class="field">
-            <p>Phone</p>
-            <input />
-          </div>
-          <div class="field">
-            <p>Company</p>
-            <input />
-          </div>
-          <div class="field">
-            <p>Area of interest</p>
-            <input />
-          </div>
-          <div class="btn"><button class="sendBtn">SEND</button></div>
-        </div>
-      </div>
-    </div>
-    <div class="all">
-      <div class="footer">
-        <div class="aboutCompany">
-          <div class="logo">
-            <img src="./public/Logo.png" alt="our logo" />
-          </div>
-          <div class="companyInfo">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy
-              text ever since the 1500s, when an unknown printer took a galley
-              of type and scrambled it to make a type specimen book
-            </p>
-          </div>
-          <div class="reqBtn">
-            <button>REQUEST QUOTE</button>
-          </div>
-        </div>
-        <div class="footerButton">
-          <div class="allBtn">
+    </header>
+    <div class="sliderSection">
+      <div class="slideshow-container">
+        <div class="navigator">
+          <div class="navigatorAllBtn nav_links">
             <ul>
-              <li><a href="#">HOME</a></li>
+              <li class="homeNavItem"><a href="#">HOME</a></li>
               <li><a href="#">ABOUT</a></li>
               <li><a href="#">CONTACT</a></li>
               <li><a href="#">SPECIALTIES</a></li>
               <li><a href="#">COMMERCIAL SERVICES</a></li>
               <li><a href="#">PORTFOLIO OF PAST PROJECTS</a></li>
               <li><a href="#">VIDEOS</a></li>
-              <li><a href="#">VIDEOS</a></li>
               <li><a href="#">IMAGES</a></li>
-              <li><a href="#">BLOG</a></li>
+              <li class="blogNavItem"><a href="#">BLOG</a></li>
             </ul>
           </div>
         </div>
-        <div class="aboutUs">
-          <div class="whatsAppIcon">
-            <i class="fa fa-whatsapp"></i>
-            <span style="margin-left: 5px">610-601-6285 </span>
+        <div class="mySlides fade">
+          <img
+            src="./public/Roof Main1.jpg"
+            style="width: 100%; height: 75vh"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="./public/Roof Main2.jpg"
+            style="width: 100%; height: 75vh"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="./public/Roof Main3.jpg"
+            style="width: 100%; height: 75vh"
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="./public/Roof Main4.jpg"
+            style="width: 100%; height: 75vh"
+          />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        <br />
+        <div class="sliderDot">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlaySection">
+      <div class="img-overlay">
+        <div class="imgBtn">
+          <img src="./public/img1.png" alt="Avatar" class="img-overlay-image" />
+          <div class="img-button">ASPHALT</div>
+        </div>
+        <div class="overlay">
+          <div class="text">
+            When it comes to shingles there are three types to choose from. 3
+            Tab Shingles, Dimensional shingles, and Luxury Shingles. Our team is
+            knowledgeable and experienced and can help you choose the right
+            shingle for your business, institution, or personal home.
           </div>
-          <div class="loactionIcon">
-            <i class="fa fa-map-marker" style="margin-left: 2px"></i>
-            <span style="margin-left: 5px">171 Indian Run Road Glenmoore, PA 19343</span>
+        </div>
+      </div>
+      <div class="img-overlay">
+        <div class="imgBtn">
+          <img src="./public/img2.png" alt="Avatar" class="img-overlay-image" />
+          <div class="img-button">SLATE</div>
+        </div>
+        <div class="overlay">
+          <div class="text">
+            We have years of experience in working with slate. We can source a
+            wide variety of natural slate options in a wide array of colors to
+            create the look you want. We are also highly skilled in slate
+            restoration work.
           </div>
-          <div class="socialMediaIcon">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-            <i class="fa fa-youtube" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="img-overlay">
+        <div class="imgBtn">
+          <img src="./public/img3.png" alt="Avatar" class="img-overlay-image" />
+          <div class="img-button">SPECIALITY TILE</div>
+        </div>
+        <div class="overlay">
+          <div class="text">
+            We want our customers to have exactly what they want. That’s why we
+            offer a wide selection of speciality roof tiles in various styles,
+            colors, and materials. We are only too happy to talk you through
+            some of the options allowing you to make an informed choice that is
+            right for you and your property.
+          </div>
+        </div>
+      </div>
+      <div class="img-overlay">
+        <div class="imgBtn">
+          <img src="./public/img4.png" alt="Avatar" class="img-overlay-image" />
+          <div class="img-button">CEDAR</div>
+        </div>
+        <div class="overlay">
+          <div class="text">
+            We have extensive experience in installing all types of cedar
+            roofing and generally have at least one crew installing cedar every
+            work day of the year. Gillespie Contracting Inc is certified through
+            The Cedar Shake & Shingle Bureau.
+          </div>
+        </div>
+      </div>
+      <div class="img-overlay">
+        <div class="imgBtn">
+          <img src="./public/img5.png" alt="Avatar" class="img-overlay-image" />
+          <div class="img-button">METAL</div>
+        </div>
+        <div class="overlay">
+          <div class="text">
+            At Gillespie Contracting Inc we offer a variety of custom metal
+            fabrication using a range of materials including copper, steel,
+            zinc, and aluminum. In addition to metal roofing, this includes
+            finials, window fabrication, roof crests, flashing and custom
+            gutters.
+          </div>
+        </div>
+      </div>
+      <div class="img-overlay">
+        <div class="imgBtn">
+          <img src="./public/img6.png" alt="Avatar" class="img-overlay-image" />
+          <div class="img-button">HISTORICAL RESTORATION</div>
+        </div>
+        <div class="overlay">
+          <div class="text">
+            At Gillespie Contracting Inc. we believe that restoration is an art
+            form. We have 30+ years of experience which has led us to the
+            forefront of the industry. We specialize in historic restoration
+            work of homes, churches, university buildings and other historic
+            structures.
+          </div>
+        </div>
+      </div>
+      <div class="img-overlay">
+        <div class="imgBtn">
+          <img src="./public/img7.png" alt="Avatar" class="img-overlay-image" />
+          <div class="img-button">SIDING</div>
+        </div>
+        <div class="overlay">
+          <div class="text">
+            We offer a range of siding installation, siding repair and siding
+            replacement services carried out by experienced siding contractors.
+          </div>
+        </div>
+      </div>
+      <div class="img-overlay">
+        <div class="imgBtn">
+          <img src="./public/img8.png" alt="Avatar" class="img-overlay-image" />
+          <div class="img-button">WINDOWS</div>
+        </div>
+        <div class="overlay">
+          <div class="text">
+            In addition to roofing services, we can also offer a range of window
+            installation services, including custom metal window fabrication.
+          </div>
+        </div>
+      </div>
+      <div class="img-overlay">
+        <div class="imgBtn">
+          <img src="./public/img9.png" alt="Avatar" class="img-overlay-image" />
+          <div class="img-button">GUTTERS</div>
+        </div>
+        <div class="overlay">
+          <div class="text">
+            We use World Gutter System for all our Euro style gutter systems. We
+            are also capable of fabricating custom gutters, k-style, and half
+            round style using copper for a durable and attractive finish to any
+            property.
           </div>
         </div>
       </div>
     </div>
-    <div class="copyWrite">
-      <p>
-        Contrary to popular belief, Lorem Ipsum is not simply random text.
-      </p>
-    </div>
-  </footer>
-</body>
 
+    <div class="descriptionSection">
+      <div class="descContent">
+        <h3>STAYING ON TOP OF THINGS!</h3>
+        <p style="margin-bottom: 0">
+          At Gillespie Contracting Inc, we are known as skilled specialists
+          within our tracle. The art of roofing is our craft & passion. With
+          over 30 years of experience, we offer weekend availability and
+          flexible appointment options. We pride ourselves on being one of the
+          country’s most high-end roofing contractors. We have built our
+          reputation as one of the top 1% in America's roofing industry. We
+          specialize in producing beautiful slate, tile, and cedar roofing. We
+          are als >d in custom metal fabrication and historic restoration work.
+          Every job is treated as if we were working on our own property, from
+          the humblest abode to the grandest of estates. One of the most
+          rewarding aspects of ot work is completing a job or project and seeing
+          how pleased the owner is and knowing they can enjoy, rely on, and take
+          pride in the finished product for years to com.
+        </p>
+        <p style="font-weight: 600; margin-top: 0">
+          <span style="text-decoration: underline"> Call 610-601-6285 </span>
+          to dicuss your project with us today!
+        </p>
+      </div>
+    </div>
+    <footer>
+      <div class="footerSection">
+        <div class="img">
+          <img src="./public/Layer 29.png" alt="" />
+        </div>
+        <div class="contactUsSection">
+          <div class="contactsHeader">
+            <h3>CONTACT US</h3>
+          </div>
+          <div class="allField">
+            <div class="field">
+              <p>Name</p>
+              <input />
+            </div>
+            <div class="field">
+              <p>Email</p>
+              <input />
+            </div>
+            <div class="field">
+              <p>Phone</p>
+              <input />
+            </div>
+            <div class="field">
+              <p>Company</p>
+              <input />
+            </div>
+            <div class="field">
+              <p>Area of interest</p>
+              <input />
+            </div>
+            <div class="btn"><button class="sendBtn">SEND</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="all">
+        <div class="footer">
+          <div class="aboutCompany">
+            <div class="logo">
+              <img src="./public/Logo.png" alt="our logo" />
+            </div>
+            <div class="companyInfo">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book
+              </p>
+            </div>
+            <div class="reqBtn">
+              <button>REQUEST QUOTE</button>
+            </div>
+          </div>
+          <div class="footerButton">
+            <div class="allBtn">
+              <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">SPECIALTIES</a></li>
+                <li><a href="#">COMMERCIAL SERVICES</a></li>
+                <li><a href="#">PORTFOLIO OF PAST PROJECTS</a></li>
+                <li><a href="#">VIDEOS</a></li>
+                <li><a href="#">VIDEOS</a></li>
+                <li><a href="#">IMAGES</a></li>
+                <li><a href="#">BLOG</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="aboutUs">
+            <div class="whatsAppIcon">
+              <i class="fa fa-whatsapp"></i>
+              <span style="margin-left: 5px">610-601-6285 </span>
+            </div>
+            <div class="loactionIcon">
+              <i class="fa fa-map-marker" style="margin-left: 2px"></i>
+              <span style="margin-left: 5px"
+                >171 Indian Run Road Glenmoore, PA 19343</span
+              >
+            </div>
+            <div class="socialMediaIcon">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyWrite">
+        <p>
+          Contrary to popular belief, Lorem Ipsum is not simply random text.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
